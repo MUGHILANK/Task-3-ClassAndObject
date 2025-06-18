@@ -8,11 +8,8 @@ namespace ClassAndObject
 {
     internal class Prime
     {
-        public void primeNumber()
+        public void primeNumber(int num)
         {
-                Console.Write("Enter a number: ");
-                int num = Convert.ToInt32(Console.ReadLine());
-
                 bool isPrime = true;
 
                 if (num <= 1)
@@ -41,6 +38,34 @@ namespace ClassAndObject
                 }
         }
 
+
+        public void primeNumber(long factData)
+        {
+           
+
+            long a = 1;
+
+            for (int i = 1; i <= factData; i++)
+            {
+                a *= i;
+            }
+
+            Console.WriteLine($"Factorial: {a}");
+
+        }
+
+
+        public string primeNumber(string name)
+        {
+
+            char[] input = name.ToCharArray();
+            Array.Reverse(input);
+
+            string newValue = new string(input);
+
+            return newValue;
+
+        }
 
 
     }
